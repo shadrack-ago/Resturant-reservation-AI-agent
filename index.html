@@ -42,14 +42,37 @@
     max-height: calc(100vh - 120px) !important;
 }
 
-@media (max-height: 600px) {
+/* Target mobile devices by width instead of height */
+@media (max-width: 768px) {
     .chat-assist-widget .chat-window {
-        height: calc(100vh - 100px) !important;
+        width: calc(100vw - 40px) !important;
+        left: 20px !important;
+        right: 20px !important;
+    }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+    .chat-assist-widget .chat-window {
+        width: calc(100vw - 20px) !important;
+        left: 10px !important;
+        right: 10px !important;
         bottom: 80px !important;
     }
 }
 </style>
-
+<!-- JS resizing widget -->
+ <!-- <script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        const chatWindow = document.querySelector('.chat-assist-widget .chat-window');
+        if (chatWindow) {
+            chatWindow.style.height = 'min(480px, calc(100vh - 100px))';
+            chatWindow.style.maxHeight = 'calc(100vh - 100px)';
+        }
+    }, 100);
+});
+</script> -->
 
 <!-- Widget Script -->
 <script src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js"></script>
