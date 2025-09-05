@@ -79,7 +79,7 @@ body {
 @media (max-width: 700px) {
     .typewriter h2 {
         font-size: 0.8rem;
-        letter-spacing: .08em;
+        letter-spacing: 1.0em;
         max-width: 90vw;
     }
 }
