@@ -79,7 +79,7 @@ body {
 @media (max-width: 600px) {
     .typewriter h2 {
         font-size: 1.1rem;
-        letter-spacing: 0.8em;
+        letter-spacing: .08em;
         max-width: 98vw;
     }
 }
@@ -95,6 +95,7 @@ body {
     from, to { border-color: transparent }
     50% { border-color: orange }
 }
+
 
 #submit-button {
     background-color: hsl(39, 90%, 31%);
