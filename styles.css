@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100%;
-    background-image: url('project images/customcxhotel.jpg');
+    background-image: url('project images/robynne-o-HOrhCnQsxnQ-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +11,8 @@ body {
     align-items: center;
     
 }
+ 
+
 .home {
     width: 50vw;
     background: rgba(0, 0, 0, 0.6);
@@ -62,6 +64,7 @@ body {
 
 .typewriter h2 {
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     font-family: monospace;
     overflow: hidden;
     border-right: .15em solid orange;
